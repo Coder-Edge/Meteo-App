@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     color: black;
 }
 
@@ -15,10 +15,10 @@ section{
 #carte{
     background-color: rgba(227, 227, 238, 0.577);
     padding: 20px 30px 20px 30px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 #mini{
-    border-radius: 10px;
+    border-radius: 30px;
     border: solid rgba(245, 245, 245, 0.862) 1px;
     padding: 5px;
 }
@@ -40,6 +40,41 @@ section{
     appearance: none;
     background-color: transparent;
     border: none;
+}
+#features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#features img{
+    width: 150px;
+}
+#glass{
+    background-color: #c8daebb0;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(3, 6, 97, 0.451);
+}
+#temperature, #wind, #Humidité{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+#features p{
+    text-align: center;
+}
+#para{
+    display: block;
+}
+h2{
+    font-size: 80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
 }
 
 
