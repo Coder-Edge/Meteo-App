@@ -1,0 +1,45 @@
+body {
+    background-image: url('../images/valthorens-banniere-1920x1080-f50_50.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: black;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#carte{
+    background-color: rgba(227, 227, 238, 0.577);
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+}
+#mini{
+    border-radius: 10px;
+    border: solid rgba(245, 245, 245, 0.862) 1px;
+    padding: 5px;
+}
+#mini input{
+    appearance: none;
+    outline: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transform: translateY(-5px);
+}
+#mini img{
+    margin: 5px 5px 0px 5px;
+    width: 24px;
+}
+#mini button{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+}
+
+
