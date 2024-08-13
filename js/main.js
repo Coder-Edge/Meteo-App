@@ -21,7 +21,7 @@ function printer(data) {
     document.querySelector('#vent').innerHTML = speed;
 
     const icon = data.weather['0'].icon;
-    document.querySelector('#icon').src = 'http://openweathermap.org/img/w/'+icon+'.png';
+    document.querySelector('#icon').src = 'https://openweathermap.org/img/w/'+icon+'.png';
     console.log(icon);
 
     const desc = data.weather['0'].description;
