@@ -117,12 +117,13 @@ h3{
     #temperature, #wind, #Humidité{
         width: 100%;
         margin: 0;
+        padding: 0;
     }
     #features img{
         width: 50px;
     }
     section{
-        margin-top: 50px;
+        margin-top: 30px;
     }
   }
 
