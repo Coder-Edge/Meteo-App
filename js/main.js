@@ -26,20 +26,25 @@ function meteo() {
 }
 
 function printer(data) {
-  const humidity = data.main.humidity;
-  document.querySelector("#hum").innerHTML = humidity;
+  if (data.cod == 200) {
+    const humidity = data.main.humidity;
+    document.querySelector("#hum").innerHTML = humidity;
 
-  const temp = data.main.temp;
-  document.querySelector("#temp").innerHTML = temp;
+    const temp = data.main.temp;
+    document.querySelector("#temp").innerHTML = temp;
 
-  const speed = data.wind.speed;
-  document.querySelector("#vent").innerHTML = speed;
+    const speed = data.wind.speed;
+    document.querySelector("#vent").innerHTML = speed;
 
-  const icon = data.weather["0"].icon;
-  document.querySelector("#icon").src =
-    "https://openweathermap.org/img/w/" + icon + ".png";
-  console.log(icon);
+    const icon = data.weather["0"].icon;
+    document.querySelector("#icon").src =
+      "https://openweathermap.org/img/w/" + icon + ".png";
+    console.log(icon);
 
-  const desc = data.weather["0"].description;
-  document.querySelector("#desc").innerHTML = desc;
+    const desc = data.weather["0"].description;
+    document.querySelector("#desc").innerHTML = desc;
+  } else {
+    alert("error: " + data.message);
+    document.querySelector("#mini").style['border-color'] = "red";
+  }
 }
