@@ -27,6 +27,8 @@ function meteo() {
 
 function printer(data) {
   if (data.cod == 200) {
+    document.querySelector("#mini").style["border-color"] = "white";
+
     const humidity = data.main.humidity;
     document.querySelector("#hum").innerHTML = humidity;
 
@@ -45,6 +47,6 @@ function printer(data) {
     document.querySelector("#desc").innerHTML = desc;
   } else {
     alert("error: " + data.message);
-    document.querySelector("#mini").style['border-color'] = "red";
+    document.querySelector("#mini").style["border-color"] = "red";
   }
 }
