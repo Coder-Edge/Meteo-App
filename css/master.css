@@ -103,6 +103,7 @@ h3{
     #mini input{
         font-size: 20px;
         width: 65%;
+        border: solid;
         /* transform: translateY(-5px); */
     }
     #mini img{
