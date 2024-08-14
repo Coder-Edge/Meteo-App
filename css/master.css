@@ -92,7 +92,7 @@ h3{
 @media (max-width: 980px) {
     body{
         height: 100vh;
-        display: none;
+        /* display: none; */
     }
     #features{
         display: grid;
