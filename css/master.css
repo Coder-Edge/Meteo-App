@@ -32,9 +32,6 @@ section{
     font-size: 20px;
     transform: translateY(-5px);
 }
-input[type="text"]::-webkit-calendar-picker-indicator {
-    display: none;
-  }
 #mini img{
     margin: 5px 5px 0px 5px;
     width: 24px;
@@ -101,6 +98,9 @@ h3{
     }
     #features img{
         width: 50px;
+    }
+    section{
+        margin-top: 20px;
     }
   }
 
