@@ -93,6 +93,19 @@ h3{
     body{
         height: 100vh;
     }
+    #features{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #temperature, #wind, #Humidité{
+    
+        width: 100%;
+    }
   }
 
 
