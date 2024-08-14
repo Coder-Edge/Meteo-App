@@ -103,7 +103,6 @@ h3{
     #mini input{
         font-size: 20px;
         width: 65%;
-        border: solid;
         /* transform: translateY(-5px); */
     }
     #mini img{
@@ -117,12 +116,13 @@ h3{
     }
     #temperature, #wind, #Humidité{
         width: 100%;
+        margin: 0;
     }
     #features img{
         width: 50px;
     }
     section{
-        margin-top: 20px;
+        margin-top: 50px;
     }
   }
 
