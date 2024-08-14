@@ -1,4 +1,4 @@
-body {
+body{
     background-image: url('../images/valthorens-banniere-1920x1080-f50_50.webp');
     background-repeat: no-repeat;
     background-position: center;
@@ -89,7 +89,7 @@ h3{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
     body{
         height: 100vh;
     }
