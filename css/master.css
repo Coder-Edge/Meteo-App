@@ -89,13 +89,13 @@ h3{
 @media (max-width: 780px) {
     #carte{
         background-color: rgba(227, 227, 238, 0.577);
-        padding: 2px 3px 2px 3px;
-        border-radius: 100px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
     }
     #mini{
         border-radius: 30px;
         border: solid rgba(245, 245, 245, 0.862) 1px;
-        padding: 5px;
+        padding: 2px;
     }
     #mini input{
         appearance: none;
