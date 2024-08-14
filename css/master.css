@@ -92,6 +92,7 @@ h3{
 @media (max-width: 780px) {
     body{
         height: 100vh;
+        background-color: brown;
     }
     #features{
         display: grid;
