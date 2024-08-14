@@ -87,6 +87,9 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 780px) {
+    body{
+        height: 100vh;
+    }
     #carte{
         background-color: rgba(227, 227, 238, 0.577);
         padding: 10px 20px 10px 20px;
@@ -99,7 +102,7 @@ h3{
     }
     #mini input{
         font-size: 20px;
-        width: 50%;
+        width: 70%;
         /* transform: translateY(-5px); */
     }
     #mini img{
