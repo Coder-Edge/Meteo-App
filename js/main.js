@@ -11,18 +11,18 @@ function geo() {
 }
 
 function showPosition(position) {
-  window.latitude = position.coords.latitude;
-  window.longitude = position.coords.longitude;
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
   console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-  // coords(latitude,longitude)
+  window
+    .fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=56aad21df110a70cd45fff6163a62c75`
+    )
+    .then((response) => response.json())
+    .then((responseJson) => {
+      printer(responseJson);
+    });
 }
-
-// function coords(lat,lon) {
-//   latitude = lat;
-//   longitude = lon;
-
-//   return latitude, longitude
-// }
 
 function showError(error) {
   switch (error.code) {
@@ -90,7 +90,6 @@ function printer(data) {
     const icon = data.weather["0"].icon;
     document.querySelector("#icon").src =
       "https://openweathermap.org/img/w/" + icon + ".png";
-    console.log(icon);
 
     const desc = data.weather["0"].description;
     document.querySelector("#desc").innerHTML = desc;
