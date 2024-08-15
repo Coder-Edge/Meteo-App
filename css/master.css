@@ -79,7 +79,9 @@ section {
   width: 100px;
 }
 
-#glass1,#glass2,#glass3 {
+#glass1,
+#glass2,
+#glass3 {
   background-color: #c8daebb0;
   border-radius: 50px;
   box-shadow: 5px 5px 5px rgba(3, 6, 97, 0.451);
@@ -129,6 +131,16 @@ h3 {
   font-size: 20px;
   font-weight: 50;
   margin-bottom: 0px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 @media (max-width: 780px) {
@@ -195,7 +207,9 @@ h3 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 0px;
   }
-  #hum,#temp,#vent{
+  #hum,
+  #temp,
+  #vent {
     margin-top: 0;
   }
 }
