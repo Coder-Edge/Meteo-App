@@ -86,7 +86,7 @@ function printer(data) {
 
     const name = data.name;
     const contry = data.sys.country;
-    document.querySelector("#mes").innerHTML = name + ", " + contry;
+    document.querySelector("#mes").innerHTML = name + ", " + contry.toLowerCase();
   } else {
     document.querySelector("#mini").style["border-color"] = "red";
 
