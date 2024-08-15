@@ -63,17 +63,6 @@ function meteo() {
     });
 }
 
-function autometeo(lat, lon) {
-  window
-    .fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=56aad21df110a70cd45fff6163a62c75`
-    )
-    .then((response) => response.json())
-    .then((responseJson) => {
-      printer(responseJson);
-    });
-}
-
 function printer(data) {
   if (data.cod == 200) {
     document.querySelector("#mini").style["border-color"] = "white";
@@ -88,13 +77,31 @@ function printer(data) {
     document.querySelector("#vent").innerHTML = speed;
 
     const icon = data.weather["0"].icon;
-    document.querySelector("#icon").src =
-      "https://openweathermap.org/img/w/" + icon + ".png";
+    document.querySelector(
+      "#icon"
+    ).src = `https://openweathermap.org/img/w/${icon}.png`;
 
     const desc = data.weather["0"].description;
     document.querySelector("#desc").innerHTML = desc;
+
+    const name = data.name;
+    const contry = data.sys.country;
+    document.querySelector("#mes").innerHTML = name + ", " + contry;
   } else {
-    alert("error: " + data.message);
     document.querySelector("#mini").style["border-color"] = "red";
+
+    document.querySelector("#mes").innerHTML = data.message;
+
+    document.querySelector("#hum").innerHTML = "--";
+
+    document.querySelector("#temp").innerHTML = "--";
+
+    document.querySelector("#vent").innerHTML = "--";
+
+    document.querySelector("#desc").innerHTML = '';
+
+    document.querySelector(
+      "#icon"
+    ).src = '../images/soleil.png';
   }
 }
