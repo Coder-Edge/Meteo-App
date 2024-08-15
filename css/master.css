@@ -194,4 +194,7 @@ h3 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 0px;
   }
+  #hum,#temp,#vent{
+    margin-top: 0;
+  }
 }
