@@ -106,17 +106,17 @@ function printer(data) {
 }
 
 function switchItems() {
-  const item1 = document.getElementById('glass1');
-  const item2 = document.getElementById('glass2');
+  const item1 = document.getElementById("glass1");
+  const item2 = document.getElementById("glass2");
 
   // Vérifie si la largeur de la fenêtre est inférieure ou égale à 480px
   if (window.innerWidth <= 480) {
-      // Inverse leur ordre dans le DOM
-      if (item1.nextSibling === item2) {
-          item1.parentNode.insertBefore(item2, item1);
-      } else {
-          item1.parentNode.insertBefore(item1, item2.nextSibling);
-      }
+    // Inverse leur ordre dans le DOM
+    if (item1.nextSibling === item2) {
+      item1.parentNode.insertBefore(item2, item1);
+    } else {
+      item1.parentNode.insertBefore(item1, item2.nextSibling);
+    }
   }
 }
-window.addEventListener('resize', switchItems);
+window.addEventListener("resize", switchItems);
