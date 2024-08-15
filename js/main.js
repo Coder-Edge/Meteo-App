@@ -86,7 +86,8 @@ function printer(data) {
 
     const name = data.name;
     const contry = data.sys.country;
-    document.querySelector("#mes").innerHTML = name + ", " + contry.toLowerCase();
+    document.querySelector("#mes").innerHTML =
+      name + ", " + contry.toLowerCase();
   } else {
     document.querySelector("#mini").style["border-color"] = "red";
 
@@ -98,10 +99,8 @@ function printer(data) {
 
     document.querySelector("#vent").innerHTML = "--";
 
-    document.querySelector("#desc").innerHTML = '';
+    document.querySelector("#desc").innerHTML = "";
 
-    document.querySelector(
-      "#icon"
-    ).src = '../images/soleil.png';
+    document.querySelector("#icon").src = "../images/soleil.png";
   }
 }

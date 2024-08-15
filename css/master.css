@@ -1,177 +1,197 @@
-body{
-    background-image: url('../images/valthorens-banniere-1920x1080-f50_50.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-    color: black;
+body {
+  background-image: url("../images/valthorens-banniere-1920x1080-f50_50.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  color: black;
 }
-header{
-    display: flex;
-    align-items:center;
-    margin-bottom: 0;
+
+header {
+  display: flex;
+  align-items: center;
 }
-#title{
-    color: white;
-    font-size: 24px;
-    border-bottom: solid;
-    margin-left: 5px;
+
+#title {
+  color: white;
+  font-size: 24px;
+  border-bottom: solid;
+  margin-left: 5px;
 }
-header img{
-    width: 50px;
-    height: 50px;
-    margin-left: 5px;
-    
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
 }
-section{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
-#carte{
-    background-color: rgba(227, 227, 238, 0.577);
-    padding: 15px 25px 15px 25px;
-    border-radius: 100px;
+
+#carte {
+  background-color: rgba(227, 227, 238, 0.577);
+  padding: 15px 25px 15px 25px;
+  border-radius: 100px;
 }
-#mini{
-    border-radius: 30px;
-    border: solid rgba(245, 245, 245, 0.862) 1px;
-    padding: 5px;
+
+#mini {
+  border-radius: 30px;
+  border: solid rgba(245, 245, 245, 0.862) 1px;
+  padding: 5px;
 }
-#mini input{
-    appearance: none;
-    outline: none;
-    color: inherit;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 20px;
-    transform: translateY(-5px);
+
+#mini input {
+  appearance: none;
+  outline: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  transform: translateY(-5px);
 }
-#mini img{
-    margin: 5px 5px 0px 5px;
-    width: 24px;
+
+#mini img {
+  margin: 5px 5px 0px 5px;
+  width: 24px;
 }
-#mini button{
-    appearance: none;
-    background-color: transparent;
-    border: none;
+
+#mini button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
 }
-#features{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+
+#features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-#features img{
-    width: 100px;
+
+#features img {
+  width: 100px;
 }
-#glass{
-    background-color: #c8daebb0;
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px rgba(3, 6, 97, 0.451);
+
+#glass {
+  background-color: #c8daebb0;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgba(3, 6, 97, 0.451);
 }
-#temperature, #wind, #Humidité{
-    
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 10px;
+
+#temperature,
+#wind,
+#Humidité {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 10px;
 }
-#features p{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#features p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#para{
-    display: block;
+
+#para {
+  display: block;
 }
-h2{
-    font-size: 60px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 20px;
+
+h2 {
+  font-size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 20px;
 }
-h4{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h3{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#mes{
-    margin-top: 20px;
-    color: rgb(201, 201, 201);
-    font-size: 20px;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:20px;
-    font-weight: 50;
-    margin-bottom: 0px;
+
+#mes {
+  margin-top: 20px;
+  color: rgb(201, 201, 201);
+  font-size: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+  margin-bottom: 0px;
 }
+
 @media (max-width: 780px) {
-    body{
-        height: 100vh;
-    }
-    /* header{
-        border: solid white;
-        align-items: center;
-    } */
-    #title{
-        font-size: 20px;
-    }
-    /* header img{
-        width: 20px;
-        height: 20px;
-    } */
-    #carte{
-        background-color: rgba(227, 227, 238, 0.577);
-        padding: 10px 20px 10px 20px;
-        border-radius: 30px;
-    }
-    #mini{
-        border-radius: 30px;
-        border: solid rgba(245, 245, 245, 0.862) 1px;
-        padding: 2px;
-    }
-    #mini input{
-        font-size: 20px;
-        width: 65%;
-        /* transform: translateY(-5px); */
-    }
-    #mini img{
-        margin: 5px 5px 0px 5px;
-        width: 24px;
-    }
-    #features{
-        grid-gap: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #temperature, #wind, #Humidité{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    #features img{
-        width: 50px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    section{
-        margin-top: 40px;
-    }
-    
-h2{
-font-size: 40px;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-margin-bottom: 0px;
-}
+  body {
+    height: 100vh;
   }
 
+  #title {
+    font-size: 20px;
+  }
 
+  #carte {
+    background-color: rgba(227, 227, 238, 0.577);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+  }
+
+  #mini {
+    border-radius: 30px;
+    border: solid rgba(245, 245, 245, 0.862) 1px;
+    padding: 2px;
+  }
+
+  #mini input {
+    font-size: 20px;
+    width: 65%;
+    /* transform: translateY(-5px); */
+  }
+
+  #mini img {
+    margin: 5px 5px 0px 5px;
+    width: 24px;
+  }
+
+  #features {
+    grid-gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #temperature,
+  #wind,
+  #Humidité {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #features img {
+    width: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  section {
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+  }
+}
